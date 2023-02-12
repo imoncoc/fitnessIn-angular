@@ -1,0 +1,47 @@
+.product-title-p{
+  font-family: var(--font-homemade-apple);
+  color: var(--color-mainBlue);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.product-title{
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.product-description{
+  width: 65%;
+  line-height: 2rem;
+  color: var(--color-grey);
+}
+.card-name{
+  font-size: 1.2rem;
+  font-family: var(--font-rajdhani);
+  font-weight: 600;
+}
+.card-originalPrice{
+  color: var(--color-red-light);
+}
+
+.card-bottom-btn{
+    font-family: var(--font-rajdhani);
+      background: transparent;
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+      border-radius: 0;
+      border: transparent;
+      // outline: 0;
+      transition: all 0.5s;
+      border: 2px solid var(--color-mainBlack);
+}
+.card-bottom-btn:hover{
+  background: var(--color-mainBlack);
+  color: var(--color-pink-light);
+}
+
+.fitness-btn-side{
+  background: var(--color-mainBlack);
+}
+.fitness-btn-side:hover{
+  scale: 1.05;
+}

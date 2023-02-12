@@ -1,0 +1,45 @@
+<div class="container-fluid my-5">
+
+  <div class="row">
+    <div class="col-11  mx-auto mt-3" >
+      <div class="d-flex justify-content-end">
+        <button class="fitness-btn-side text-uppercase me-1">
+          <i class="fa-solid fa-chevron-left text-white"></i>
+        </button>
+        <button class="fitness-btn-side text-uppercase">
+          <i class="fa-solid fa-chevron-right text-white"></i>
+        </button>
+      </div>
+    </div>
+    <div class="col-10 mx-auto text-center">
+      <p class="mt-5 product-title-p">whats new</p>
+      <h2 class="product-title text-center">SHOP THE LATEST</h2>
+      <p class="product-description mx-auto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur</p>
+    </div>
+  </div>
+
+
+  <div class="row mx-4">
+    <div class="col-10 col-md-6 col-lg-3 mx-auto my-5" *ngFor="let item of products">
+      <div class="card border-0  shadow-sm p-2 font-rajdhani ">
+        <img [src]="item.image" alt="">
+        <h3 class="my-3 card-name"> {{item.name}} </h3>
+        <div class="d-flex">
+          <h3 class="text-decoration-line-through me-3 text-muted fw-semibold">${{item.price}}</h3>
+          <h3 class="card-originalPrice fw-semibold">${{item.originalPrice}} </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-10  mx-auto my-3" >
+      <div class="d-flex justify-content-center">
+        <button class="card-bottom-btn text-uppercase">view all the products</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<app-app-gallery></app-app-gallery>
+

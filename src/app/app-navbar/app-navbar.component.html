@@ -1,0 +1,54 @@
+<p class="nav-brief text-center py-3">We've extended our returns period to 60 days</p>
+
+
+<div class="container-fluid">
+  <div class="row mx-2">
+    <nav class="navbar navbar-expand-lg navbar-light p-3 sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand disabled custom-logo fs-1 fw-semibold me-5">LOGO.</a>
+
+        <button class="navbar-toggler btn-burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" (click)="isShowMenu = !isShowMenu" [attr.aria-expanded]="isShowMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" [ngClass]="{ 'show': isShowMenu }" id="navbarSupportedContent">
+            <ul class="navbar-nav  me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item mx-0 mx-lg-2">
+                    <a class="nav-link active fw-semibold fs-5" aria-current="page" routerLink="">Home</a>
+                </li>
+                <li class="nav-item  mx-0 mx-lg-2 fw-semibold fs-5">
+                    <a class="nav-link" routerLink="">Shop</a>
+                </li>
+                <li class="nav-item fw-semibold mx-0 mx-lg-3 fs-5">
+                    <a class="nav-link" routerLink="/products">About</a>
+                </li>
+                <li class="nav-item fw-semibold mx-0 mx-lg-3 fs-5">
+                    <a class="nav-link" routerLink="/products">Blog</a>
+                </li>
+                <li class="nav-item fw-semibold mx-0 mx-lg-3 fs-5">
+                    <a class="nav-link" routerLink="/products">Features</a>
+                </li>
+                <li class="nav-item fw-semibold mx-0 mx-lg-3 fs-5">
+                    <a class="nav-link" routerLink="/products">Contacts</a>
+                </li>
+            </ul>
+
+            <div class="div d-flex flex-column">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="">
+                      <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                    </a></li>
+                    <li class="nav-item"><a class="nav-link" href="" routerLink="/login">
+                      <i class="fa-solid fa-right-to-bracket fa-2x"></i>
+                    </a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/user" href="">
+                      <i class="fa-regular fa-user fa-2x"></i>
+                    </a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</nav>
+  </div>
+</div>

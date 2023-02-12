@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="row">
+    <div class="col-10 col-lg-6 mx-auto">
+      <div class="mt-5">
+        <h2 class="login-title text-center">Sign Up</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-10 col-md-6 mx-auto">
+      <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()" class="my-5">
+        <div class="my-3">
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>First Name</mat-label>
+            <input
+              matInput
+              placeholder="Enter Your First Name"
+              formControlName="firstName"
+            />
+            <mat-hint>Hints: Mr. John</mat-hint>
+            <mat-error>Invalid or missing Your First Name.</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="my-3">
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Last Name</mat-label>
+            <input
+              matInput
+              placeholder="Enter Your Last Name"
+              formControlName="lastName"
+            />
+            <mat-hint>Hints: Doe</mat-hint>
+            <mat-error>Invalid or missing Your Last Name.</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="my-3">
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Email</mat-label>
+            <input
+              matInput
+              placeholder="Enter Your Email Address"
+              formControlName="email"
+            />
+            <mat-hint>Hints: your@gmail.com</mat-hint>
+            <mat-error>Invalid or missing Your Email.</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="my-3">
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Password</mat-label>
+            <input
+              matInput
+              placeholder="Enter Your Password"
+              formControlName="password"
+            />
+            <mat-hint>Hints: 12345678</mat-hint>
+            <mat-error>Invalid or missing Password</mat-error>
+          </mat-form-field>
+        </div>
+
+
+          <button
+            class="fitness-btn-primary text-uppercase"
+            type="submit"
+          >
+            Register
+          </button>
+
+
+      </form>
+    </div>
+  </div>
+
+
+</div>
+

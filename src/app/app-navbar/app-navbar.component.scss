@@ -1,0 +1,16 @@
+.nav-brief{
+  background-color: var(--color-mainBlack);
+  color: var(--color-pink-light);
+}
+.navbar-nav .nav-link{
+  transition: all 0.3s;
+  font-family: var(--font-rajdhani) !important;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover{
+  color: var(--color-mainBlue) !important;
+  color: var(--color-red-light) !important;
+}
+// .navbar-nav .nav-link.active {
+//   color: var(--color-mainBlue) !important;
+// }

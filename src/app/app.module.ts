@@ -18,6 +18,7 @@ import { MaterialsModule } from './materials/materials.module';
 import { AppSignupComponent } from './app-signup/app-signup.component';
 import { AppResetPasswordComponent } from './app-reset-password/app-reset-password.component';
 import { AppUserComponent } from './app-user/app-user.component';
+import { AppNotFoundComponent } from './app-not-found/app-not-found.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { AppUserComponent } from './app-user/app-user.component';
     AppSignupComponent,
     AppResetPasswordComponent,
     AppUserComponent,
+    AppNotFoundComponent,
   ],
   imports: [
     BrowserModule,
